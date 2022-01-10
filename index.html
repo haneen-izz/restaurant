@@ -1,154 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ca366949b7.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-        </style> 
-        
-    <title></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ca366949b7.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  </style>
+
+  <title>foodies</title>
 
 </head>
-<body>
-<header>
 
-    <nav style= " height: 70px;box-shadow: 0px 0px 1px 1.9px grey; " class=" navbar navbar-expand-lg navbar-light bg-light">
-        <a style="  font-family: 'The Nautigal', cursive; font-size: 45px;" class="navbar-brand" href="index.html">Foodies</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="m-2 p-4 navFont collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class=" navbar-nav mr-auto">
-            <li class=" nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="aboutUs.html">aboutUs</a>
-              </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="index.html">Home</a>
-                <a class="dropdown-item" href="menu.html">menu</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="aboutUs.html">about us</a>
+<body>
+  <header>
+
+    <nav class="navSty navbar navbar-expand-lg navbar-light ">
+      <a style="  font-family: 'The Nautigal', cursive; font-size: 45px;" class="navbar-brand"
+        href="index.html">Foodies</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" m-2 p-4 navFont collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class=" navbar-nav mr-auto">
+          <li class=" nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">contactUs</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">Home</a>
+              <a class="dropdown-item" href="menu.html">menu</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="contactUs.html">contactUs</a>
+            </div>
+          </li>
+
+        </ul>
+
+
+        <form action="">
+          <div style="position: relative; top :10px; border: 1px solid black;"
+            class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon1"
+                class="searchPos form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i style="color: black;"
+                    class="fa fa-search"></i></button>
               </div>
-            </li>
-        
-          </ul>
-    
-             
-          <form action="">
-            <div style="position: relative; top :10px; border: 1px solid black;" class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
-              <div class="input-group">
-                <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="searchPos form-control border-0 bg-light">
-                <div class="input-group-append">
-                  <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i style="color: black;" class="fa fa-search"></i></button>
+            </div>
+          </div>
+
+
+    </nav>
+
+  </header>
+
+  <main>
+    <section>
+      <div style="margin-top:-300px ;">
+        <img style=" box-shadow: 3px 3px 30px 2px grey;  height: 900px; "
+          src="https://flair-magazine.com/wp-content/uploads/2021/05/ITALIAN-FOOD.jpg" alt="">
+        <h1 class="headStyle " id="fontHead">welcome to our restaurant</h1>
+        <p style="font-size: 1.2rem" class="navFont paraStyle col-5  ">foodies is restaurant located in amman, we have
+          awesome dishes and recipes, Have a pleasant dining experience. </p>
+
+        <div class="container">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
+      </div>
+
+
+
+
+      <div style="margin-top: -180px;">
+        <h2 class="navFont secHead">our restaurant</h2>
+        <p class="navFont col-4 secPara">Our restaurant offers the most luxurious dishes of high quality and we have the
+          most skilled chefs with a quiet place , We bring dishes to your table in one long flow for you to share with
+          your friends and family,</p>
+        <div class="parent">
+          <img
+            src="https://www.lironboylston.com/wp-content/uploads/2020/12/ppp-why-wont-anyone-rescue-restaurants-FT-BLOG0420.jpg"
+            class="child rounded secImg" width="30%" alt="">
+        </div>
+      </div>
+
+      </div>
+
+      </div>
+
+
+      <section class="pt-5 pb-5" style="position: relative; left: 395px;">
+        <div style="height: 30px; position: relative; top: -350px" class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class=" navFont mb-3">Most popular dishes </h3>
+            </div>
+            <div class="col-6 text-right">
+              <a style="background-color: black;" class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2"
+                role="button" data-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              <a style="background-color: black;" class="btn btn-primary mb-3 " href="#carouselExampleIndicators2"
+                role="button" data-slide="next">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="col-12">
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img width="100%" height="180px" class="img-fluid" alt="100%x280"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxQTajvxOTJSbEbTmg3VgSLcqVwKmjFWKfd3y04IG9hskeJIecVc-pzmFwxGAjhvEObs&usqp=CAU">
+                          <div class="card-body">
+                            <h4 class="card-title">shawermah</h4>
+                            <p class="card-text">Shawarma is a popular Levantine Arab dish consisting of meat cut into
+                              thin slices
+                            </p>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img width="100%" height="180px" class="img-fluid" alt="100%x280"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb555o5tEvXO9ZYj89T1OEgsYtS9NZRPtoDQ&usqp=CAU">
+                          <div class="card-body">
+                            <h4 class="card-title">potato with cheese</h4>
+                            <p class="card-text">The cheesy sauce on this potato bake has impressed many a Taste member.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img width="100%" height="180px" class="img-fluid" alt="100%x280"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXF1MKwwqQKvzmqgjKCmKOAI2OSs69fJacIGlNox1VpfLcD-6kLRP1_eBvLquKHz7QqQ&usqp=CAU">
+                          <div class="card-body">
+                            <h4 class="card-title">burger meal</h4>
+                            <p class="card-text">s a food, typically considered a sandwich, consisting of one or more
+                              cooked patties.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img width="100%" height="180px" class="img-fluid" alt="100%x280"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb555o5tEvXO9ZYj89T1OEgsYtS9NZRPtoDQ&usqp=CAU">
+                          <div class="card-body">
+                            <h4 class="card-title">potato with cheese</h4>
+                            <p class="card-text">is a popular Levantine Arab dish consisting of meat cut into thin
+                              slices
+                            </p>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img width="100%" height="180px" class="img-fluid" alt="100%x280"
+                            src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2021%2F03%2F03%2Fnsoto-restaurant-opening-FT-BLOG0321.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title">japanese meal</h4>
+                            <p class="card-text">is a popular Levantine Arab dish consisting of meat cut into thin
+                              slices
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img width="100%" height="180px" class="img-fluid" alt="300%x300"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXF1MKwwqQKvzmqgjKCmKOAI2OSs69fJacIGlNox1VpfLcD-6kLRP1_eBvLquKHz7QqQ&usqp=CAU">
+                          <div class="card-body">
+                            <h4 class="card-title">chicken burger</h4>
+                            <p class="card-text">s a food, typically considered a sandwich, consisting of one or more
+                              cooked patties.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
-          
-           
-      </nav>
-      
-</header>
-
-<main>
- <div style="margin-top:-300px ;">
-   <img style="z-index: -1; position: relative; height: 900px; " class="img-fluid" src="https://flair-magazine.com/wp-content/uploads/2021/05/ITALIAN-FOOD.jpg"  alt="">
-   <h1 class="headStyle " id="fontHead" >welcome to our restaurant</h1>
-   <p style="font-size: 1.2rem" class="navFont paraStyle col-5  " >foodies is restaurant located in amman, we have awesome dishes and recipes, Have a pleasant dining experience. </p>
- 
-   <div class="container">
-    <div class="chevron"></div>
-    <div class="chevron"></div>
-    <div class="chevron"></div>
-  </div>
-</div>
-
-      <br>
-      <br>
-      <br>
-
-    </div>
-  </div>
-</div>
-
-
-
-</main>
-<!-- Footer -->
-<footer class="page-footer font-small teal pt-4">
-
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer style="background-color: #bc6c25;" class="page-footer font-small teal pt-4">
     <!-- Footer Text -->
-    <div  style="background-color: grey;" class="container-fluid text-center text-md-left">
-  
+    <div class="container-fluid text-center text-md-left">
+
       <!-- Grid row -->
-      <div class="row">
-  
+      <div class="row footer-div">
+
         <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-  
+        <div style="position: relative; left:50px" class="col-md-6 mt-md-0 mt-3 ">
+
           <!-- Content -->
-          <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-            repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-            harum esse fugiat. Itaque, culpa?</p>
-  
+          <h5 class="text-uppercase font-weight-bold footer-h5">about us</h5>
+          <p class="footer-p">Our restaurant offers the most luxurious dishes of high quality and we have the most
+            skilled chefs with a quiet place , We bring dishes to your table in one long flow for you to share with your
+            friends and family</p>
         </div>
         <!-- Grid column -->
-  
+
         <hr class="clearfix w-100 d-md-none pb-3">
-  
+
         <!-- Grid column -->
-        <div class="col-md-6 mb-md-0 mb-3">
-  
+        <div style="position: relative; left:200px; " class="col-md-6 mb-md-0 mb-3">
+
           <!-- Content -->
-          <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-            commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-            excepturi hic.</p>
-  
+          <h5 class="text-uppercase font-weight-bold footer-h5">Location</h5>
+          <p style="margin: 5px 0px;"><span class="fas fa-map-marker-alt"></span>
+            <span class="text">Amman-jordan </span>
+          </p>
+          <p style="margin: 5px 0px;">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text"> +962-777777777</span>
+          </p>
+          <span class="fas fa-envelope"></span>
+          <span class="text"> tourism@gmail.com</span>
+
         </div>
-        <!-- Grid column -->
-  
       </div>
-      <!-- Grid row -->
-  
+    </div>
+    <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
     </div>
     <!-- Footer Text -->
-  
+
     <!-- Copyright -->
-    <div style="background-color: black;" class="footer-copyright text-center py-3">© 2020 Copyright:
-      
+    <div style="color: black; background-color: #dda15e; margin-top: 20px; font-family: 'Asap', sans-serif;"
+      class="footer-copyright text-center py-3">© 2022 Copyright: haneen jaradeh
     </div>
     <!-- Copyright -->
-  
+
   </footer>
-  <!-- Footer -->
 
 
 
 
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
